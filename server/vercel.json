@@ -6,6 +6,10 @@
             "use": "@vercel/node",
             "config": {
                 "includeFiles": [
+                    "configs/**",
+                    "controllers/**",
+                    "models/**",
+                    "routes/**",
                     "dist/**"
                 ]
             }
@@ -16,8 +20,5 @@
             "src": "/(.*)",
             "dest": "server.js"
         }
-    ],
-    "scripts": {
-        "build": "npm run build"
-    }
+    ]
 }
