@@ -24,5 +24,6 @@ app.use('/api/owner', ownerRouter);
 app.use('/api/bookings', bookingRouter);
 
 
-// Export the app for Vercel (don't use app.listen)
-export default app;
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, ()=> console.log(`server running on port ${PORT}`))
