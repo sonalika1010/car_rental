@@ -2,10 +2,10 @@
 
 import ImageKit from "imagekit";
 
-const imageKit = new ImageKit({
+const imagekit = new ImageKit({  // ← lowercase variable name
   publicKey: process.env.IMAGEKIT_PUBLIC_KEY,
   privateKey: process.env.IMAGEKIT_PRIVATE_KEY,
   urlEndpoint: process.env.IMAGEKIT_URL_ENDPOINT
 });
 
-export default imageKit;
+export default imagekit;  // ← Export matches variable name

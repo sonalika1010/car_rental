@@ -157,7 +157,7 @@ export const updateUserImage = async (req, res)=>{
             folder: '/users'
         })
         
-        // optimization through imagekit URL transformation
+        // optimization through imageKit URL transformation
         var optimizedImageUrl = imagekit.url({
             path : response.filePath,
             transformation : [
@@ -176,8 +176,3 @@ export const updateUserImage = async (req, res)=>{
         res.json({success: false, message: error.message})
     }
 }
-
-
-
-
-
